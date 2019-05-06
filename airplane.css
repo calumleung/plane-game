@@ -9,12 +9,22 @@
   }
   
   .sky{
-    width: 100%;
+    width: 98.9%;
     height: 80px;
     position: absolute;
     top: 328px;
     background: #808F8F;
-    z-index: 2;
+  }
+
+  .line{
+
+    background-image: linear-gradient(to right, #ffdd71 0%, #ffdd71 50%, transparent 50%);
+    background-size: 120px 150px;
+    background-repeat: repeat-x;
+    width: 98.9%;
+    height: 16px;
+    position: absolute;
+    top: 360px;
   }
 
   .question {
