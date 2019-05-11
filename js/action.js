@@ -18,7 +18,7 @@ function low() {
   var obj = document.getElementById("cloud");
   n++;
 
-  obj.style.top = parseInt(obj.style.top) + 1 + "px";
+  obj.style.top = parseInt(obj.style.top) + 100 + "px";
   // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
 
   if (n === 30) {
@@ -40,7 +40,7 @@ function high() {
   var obj = document.getElementById("cloud");
   n++;
 
-obj.style.top = parseInt(obj.style.top) - 1 + "px";
+obj.style.top = parseInt(obj.style.top) - 100 + "px";
 // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
   if (n === 30) {
     n = 0;
@@ -119,8 +119,8 @@ function theend() {
 
 
 function again(){
-    document.getElementById("airplaneimg").style.left = "100px";
-    document.getElementById("airplaneimg").style.top = "150px";
+//     document.getElementById("airplaneimg").style.left = "100px";
+//     document.getElementById("airplaneimg").style.top = "150px";
     document.getElementById("airplaneimg").style.transform = "rotate(0deg)";
     document.getElementById("q1").style.display = "block";
     document.getElementById("q1a").style.display = "block";
