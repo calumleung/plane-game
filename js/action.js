@@ -6,12 +6,14 @@ var score = 10000;
 
 function highscore() {
   score=score+200;
-  score.innerHTML="(" + score + ")";
+  document.getElementById("score").innerHTML="score";
+//   score.innerHTML="(" + score + ")";
 }
 
 function lowscore() {
   score=score-2000;
-  score.innerHTML="(" + score + ")";
+  document.getElementById("score").innerHTML="score";
+//   score.innerHTML="(" + score + ")";
 }
 
 function low() {
@@ -127,5 +129,6 @@ function again(){
     document.getElementById("end").style.display = "none";
     document.getElementById("again").style.display = "none";
     score=10000;
-    score.innerHTML="(" + score + ")";
+    document.getElementById("score").innerHTML="score";
+//     score.innerHTML="(" + score + ")";
 }
