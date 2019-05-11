@@ -4,17 +4,18 @@ var score = 10000;
 function highscore() {
   score=score+200;
   document.getElementById("score").innerHTML=score;
-//   score.innerHTML="(" + score + ")";
+    document.getElementById("airplaneimg").style.transform = "rotate(15deg)";
+
 }
 
 function lowscore() {
   score=score-2000;
   document.getElementById("score").innerHTML=score;
-//   score.innerHTML="(" + score + ")";
+  document.getElementById("airplaneimg").style.transform = "rotate(-15deg)";
 }
 
 function low() {
-  var obj = document.getElementById("airplaneimg");
+  var obj = document.getElementById("cloud");
   n++;
 
   obj.style.top = parseInt(obj.style.top) + 1 + "px";
@@ -28,7 +29,7 @@ function low() {
 
 function lowStart() {
   t = setInterval("low()", 10);
-  document.getElementById("airplaneimg").style.transform = "rotate(15deg)";
+//   document.getElementById("airplaneimg").style.transform = "rotate(15deg)";
 }
 
 function timeStop() {
@@ -36,7 +37,7 @@ function timeStop() {
 }
 
 function high() {
-  var obj = document.getElementById("airplaneimg");
+  var obj = document.getElementById("cloud");
   n++;
 
 obj.style.top = parseInt(obj.style.top) - 1 + "px";
@@ -49,7 +50,7 @@ obj.style.top = parseInt(obj.style.top) - 1 + "px";
 
 function highStart() {
   t = setInterval("high()", 10);
-  document.getElementById("airplaneimg").style.transform = "rotate(-15deg)";
+//   document.getElementById("airplaneimg").style.transform = "rotate(-15deg)";
 }
 
 function timeStop() {
