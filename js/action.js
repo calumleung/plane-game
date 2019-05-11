@@ -6,7 +6,7 @@ var score = 10000;
 
 function highscore() {
   score=score+200;
-  obj.innerHTML="(" + score + ")";
+  q1e.innerHTML="(" + score + ")";
 }
 
 function lowscore() {
