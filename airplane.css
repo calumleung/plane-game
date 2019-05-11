@@ -19,6 +19,11 @@
 		z-index:1;width:100%;height:50%;position:absolute;
 	}
 
+.react{
+	z-index:100;
+	position:relative;
+}
+
 .question {
 	background: #ED6A5A;
 	width: 100%;

@@ -1,6 +1,7 @@
 var n = 0;
 var score = 10000;
 
+
 function highscore() {
   score=score+200;
   document.getElementById("score").innerHTML=score;
@@ -119,8 +120,7 @@ function theend() {
 
 
 function again(){
-//     document.getElementById("airplaneimg").style.left = "100px";
-//     document.getElementById("airplaneimg").style.top = "150px";
+     document.getElementById("cloud").style.top = "0px";
     document.getElementById("airplaneimg").style.transform = "rotate(0deg)";
     document.getElementById("q1").style.display = "block";
     document.getElementById("q1a").style.display = "block";
