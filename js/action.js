@@ -6,12 +6,22 @@ var score = 10000;
 
 function highscore() {
   score=score+200;
+<<<<<<< HEAD
   score.innerHTML="(" + score + ")";
+=======
+  document.getElementById("score").innerHTML="score";
+//   score.innerHTML="(" + score + ")";
+>>>>>>> 386ec0d15ee5a269716963b344339c17bc81f6eb
 }
 
 function lowscore() {
   score=score-2000;
+<<<<<<< HEAD
   score.innerHTML="(" + score + ")";
+=======
+  document.getElementById("score").innerHTML="score";
+//   score.innerHTML="(" + score + ")";
+>>>>>>> 386ec0d15ee5a269716963b344339c17bc81f6eb
 }
 
 function low() {
@@ -127,5 +137,11 @@ function again(){
     document.getElementById("end").style.display = "none";
     document.getElementById("again").style.display = "none";
     score=10000;
+<<<<<<< HEAD
     score.innerHTML="(" + score + ")";
 }
+=======
+    document.getElementById("score").innerHTML="score";
+//     score.innerHTML="(" + score + ")";
+}
+>>>>>>> 386ec0d15ee5a269716963b344339c17bc81f6eb
