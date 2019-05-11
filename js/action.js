@@ -6,12 +6,12 @@ var score = 10000;
 
 function highscore() {
   score=score+200;
-  obj.innerHTML="(" + score + ")";
+  score.innerHTML="(" + score + ")";
 }
 
 function lowscore() {
   score=score-2000;
-  obj.innerHTML="(" + score + ")";
+  score.innerHTML="(" + score + ")";
 }
 
 function low() {
@@ -127,5 +127,5 @@ function again(){
     document.getElementById("end").style.display = "none";
     document.getElementById("again").style.display = "none";
     score=10000;
-    obj.innerHTML="(" + score + ")";
+    score.innerHTML="(" + score + ")";
 }
