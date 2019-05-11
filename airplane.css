@@ -6,13 +6,13 @@
 }
 .airplane {
 	width: 100%;
-	height: 250px;
+	height: 220px;
 	background: #ffdd71;
 }
 #runway{
 	width: 100%;
 	position: relative;
-	top: 180px;
+	top: 150px;
 }
 
 .sky {
