@@ -1,7 +1,6 @@
 var m = 0;
 var n = 0;
-var w = window.screen.width;
-var c = w/200;
+var c = 0.7;
 var score = 10000;
 
 function highscore() {
@@ -20,7 +19,7 @@ function low() {
   var obj = document.getElementById("airplaneimg");
   n++;
 
-  obj.style.top = parseInt(obj.style.top) + 1 + "px";
+  obj.style.top = parseInt(obj.style.top) + c + "px";
   // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
 
   if (n == 30) {
@@ -42,7 +41,7 @@ function high() {
   var obj = document.getElementById("airplaneimg");
   n++;
 
-obj.style.top = parseInt(obj.style.top) - 1 + "px";
+obj.style.top = parseInt(obj.style.top) - c + "px";
 // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
   if (n == 30) {
     n = 0;
