@@ -2,21 +2,28 @@ var m = 0;
 var n = 0;
 var w = window.screen.width;
 var c = w/200;
+var score = 10000;
+
+function highscore() {
+  score=score+200;
+  score.innerHTML="(" + score + ")";
+}
+
+function lowscore() {
+  score=score-2000;
+  score.innerHTML="(" + score + ")";
+}
 
 function low() {
   var obj = document.getElementById("airplaneimg");
-  m++;
   n++;
 
-  obj.style.left = parseInt(obj.style.left) + c + "px";
   obj.style.top = parseInt(obj.style.top) + 1 + "px";
   // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
 
-  if (m == 30 && n == 30) {
-    m = 0;
+  if (n == 30) {
     n = 0;
     timeStop();
-    
   }
 }
 
@@ -31,14 +38,11 @@ function timeStop() {
 
 function high() {
   var obj = document.getElementById("airplaneimg");
-  m++;
   n++;
 
-obj.style.left = parseInt(obj.style.left) + c + "px";
 obj.style.top = parseInt(obj.style.top) - 1 + "px";
 // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
-  if (m == 30 && n == 30) {
-    m = 0;
+  if (n == 30) {
     n = 0;
     timeStop();
   }
@@ -122,4 +126,6 @@ function again(){
     document.getElementById("q1a").style.display = "block";
     document.getElementById("end").style.display = "none";
     document.getElementById("again").style.display = "none";
+    score=10000;
+    score.innerHTML="(" + score + ")";
 }
