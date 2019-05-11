@@ -1,4 +1,9 @@
-﻿.airplane_container {
+﻿.planegame{
+	width: 100%;
+	margin: 0px;
+}
+
+.airplane_container {
 	width: 100%;
 }
 #airplaneimg {
@@ -10,9 +15,9 @@
 	background: #ffdd71;
 }
 .sky {
-	width: 100%;
+	width: auto;
 	height: 80px;
-	position: absolute;
+	position: relative;
 	top: 250px;
 	background: #808F8F;
 }
@@ -161,8 +166,27 @@ button {
 .airplane {
 	height: 250px;
 }
-airplaneimg {
+.sky {
+	width: 100%;
+	height: 80px;
+	position: relative;
+	top: -50px;
+	background: #808F8F;
 }
+.line {
+	background-image: linear-gradient(to right, #ffdd71 0%, #ffdd71 50%, transparent 50%);
+	background-size: 120px 150px;
+	background-repeat: repeat-x;
+	width: 98.9%;
+	height: 16px;
+	position: relative;
+	top: -100px;
+}
+
+	.question{
+		padding: 0px
+	}	
+
 .q {
 	padding: 25px 30px 5px 30px;
 	font-size: 14px;
@@ -171,7 +195,8 @@ button {
 	width: 96%;
 	height: 40px;
 	font-size: 12px;
-	margin: 3px;/* border-radius: 0px;
+	margin: 3px;
+	/* border-radius: 0px;
     padding: 5px 0px;
     border: solid 5px 0px  #ED6A5A;
     box-shadow: 0px;
