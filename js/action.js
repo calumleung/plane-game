@@ -1,6 +1,4 @@
-var m = 0;
 var n = 0;
-var c = 0.7;
 var score = 10000;
 
 function highscore() {
@@ -19,10 +17,10 @@ function low() {
   var obj = document.getElementById("airplaneimg");
   n++;
 
-  obj.style.top = parseInt(obj.style.top) +  + "px";
+  obj.style.top = parseInt(obj.style.top) + 1 + "px";
   // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
 
-  if (n == 30) {
+  if (n === 30) {
     n = 0;
     timeStop();
   }
@@ -43,7 +41,7 @@ function high() {
 
 obj.style.top = parseInt(obj.style.top) - 1 + "px";
 // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
-  if (n == 30) {
+  if (n === 30) {
     n = 0;
     timeStop();
   }
