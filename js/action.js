@@ -2,24 +2,28 @@ var n = 0;
 var score = 10000;
 
 
-function highscore() {
+function lowscore() {
   score=score+200;
   document.getElementById("score").innerHTML=score;
-    document.getElementById("airplaneimg").style.transform = "rotate(15deg)";
+    document.getElementById("airplaneimg").style.transform = "rotate(-15deg)";
 
 }
 
-function lowscore() {
+function highscore() {
   score=score-2000;
   document.getElementById("score").innerHTML=score;
-  document.getElementById("airplaneimg").style.transform = "rotate(-15deg)";
+  document.getElementById("airplaneimg").style.transform = "rotate(15deg)";
+  if (score===0){
+  document.getElementById("runway").style.display = "block";
+  document.getElementById("explosionimg").style.display = "block";
+  }
 }
 
 function low() {
   var obj = document.getElementById("cloud");
   n++;
 
-  obj.style.top = parseInt(obj.style.top) + 2 + "px";
+  obj.style.top = parseInt(obj.style.top) - 1 + "px";
   // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
 
   if (n === 30) {
@@ -41,7 +45,7 @@ function high() {
   var obj = document.getElementById("cloud");
   n++;
 
-obj.style.top = parseInt(obj.style.top) - 1 + "px";
+obj.style.top = parseInt(obj.style.top) + 2 + "px";
 // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
   if (n === 30) {
     n = 0;
@@ -126,6 +130,8 @@ function again(){
     document.getElementById("q1a").style.display = "block";
     document.getElementById("end").style.display = "none";
     document.getElementById("again").style.display = "none";
+    document.getElementById("explosionimg").style.display = "none";
+    document.getElementById("runway").style.display = "none";
     score=10000;
     document.getElementById("score").innerHTML=score;
 //     score.innerHTML="(" + score + ")";
