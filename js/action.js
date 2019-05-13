@@ -23,7 +23,7 @@ function low() {
   var obj = document.getElementById("cloud");
   n++;
 
-  obj.style.top = parseInt(obj.style.top) + 2 + "px";
+  obj.style.top = parseInt(obj.style.top) + 1 + "px";
   // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
 
   if (n === 30) {
