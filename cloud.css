@@ -4,11 +4,9 @@
 .cloud-body {
 	top:-50px;
 	color: #333;
-	font: 100% Arial, Sans Serif;
-	height: 40%;
 	width: 100%;
 	margin: 10px;
-	min-width: 00px;
+	min-width: 0px;
 	padding: 0px;
 	overflow-x: hidden;
 }
@@ -17,7 +15,6 @@
 .cloud-body {
 	top: -50px;
 	color: #333;
-	font: 100% Arial, Sans Serif;
 	height: 40%;
 	width: 100%;
 	margin: 10px;
