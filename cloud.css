@@ -2,7 +2,7 @@
 /* CSS Document */
 
 .cloud-body {
-	background: ;
+	top:-50px;
 	color: #333;
 	font: 100% Arial, Sans Serif;
 	height: 40%;
@@ -15,7 +15,7 @@
 
 @media(max-width:480px) {
 .cloud-body {
-	background: ;
+	top: -50px;
 	color: #333;
 	font: 100% Arial, Sans Serif;
 	height: 40%;
