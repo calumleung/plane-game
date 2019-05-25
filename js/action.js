@@ -20,10 +20,10 @@ function highscore() {
 }
 
 function low() {
-  var obj = document.getElementById("cloud");
+  var obj = document.getElementById("airplaneimg");
   n++;
 
-  obj.style.top = parseInt(obj.style.top) + 1 + "px";
+  obj.style.top = parseInt(obj.style.top) - 1 + "px";
   // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
 
   if (n === 30) {
@@ -42,10 +42,10 @@ function timeStop() {
 }
 
 function high() {
-  var obj = document.getElementById("cloud");
+  var obj = document.getElementById("airplaneimg");
   n++;
 
-obj.style.top = parseInt(obj.style.top) - 1 + "px";
+obj.style.top = parseInt(obj.style.top) + 1 + "px";
 // obj.innerHTML="(" + obj.style.left + "," + obj.style.top +")"
   if (n === 30) {
     n = 0;
