@@ -59,19 +59,19 @@
         <!-- 問題區 -->
         <div class="question" id="qqq"> 
           <!-- 第一題     -->
-          <div class="q" id="q1"> 1.今天你要出國旅遊，但是到了桃園機場，卻發現你的航班因為機師罷工而取消，現場有旅客跟櫃台質疑，你會怎麼做？ </div>
+          <div class="q" id="q1"> Q1. 華航機師到公司報到後，就可以直接上飛機待命，不須做起飛前的準備工作。</div>
           
           <!-- 第二題     -->
-          <div class="q" id="q2"> 2.下面哪一個不是《勞資爭議處理法》中的合法罷工程序？ </div>
+          <div class="q" id="q2"> Q2. 工會要求放寬酒測值的標準（例如：將酒測標準從0.10提高至0.20）。</div>
           
           <!-- 第三題     -->
-          <div class="q" id="q3"> 3.下面哪一個不是《勞資爭議處理法》中的合法罷工程序？ </div>
+          <div class="q" id="q3"> Q3. 《勞資爭議處理法》並未明訂定雇主不能因為勞工參加罷工而解僱或懲戒。</div>
           
           <!-- 第四題     -->
-          <div class="q" id="q4"> 4.下面哪一個不是《勞資爭議處理法》中的合法罷工程序？ </div>
+          <div class="q" id="q4"> Q4. 台灣現行法律有規定，勞工罷工需要提前預告。</div>
           
           <!-- 第五題     -->
-          <div class="q" id="q5"> 5.下面哪一個不是《勞資爭議處理法》中的合法罷工程序？ </div>
+          <div class="q" id="q5"> Q5. 「勞動三法」包含《工會法》、《團體協約法》、《勞資爭議法》，《勞動基準法》則不在此範疇。</div>
         </div>
         
         <!-- 答案與解釋區 -->
@@ -81,85 +81,73 @@
           
           <div id="q1a" onclick="q1e();">
             <div class="qa_container">
-              <button class="btn" id="q1a1" onclick="highStart();highscore();">沒事沒事下次再去吧吧吧</button>
-              <br/>
-              <button class="btn" id="q1a2" onclick="lowStart();lowscore();">來吵架啊啊啊啊啊啊啊啊啊啊啊</button>
-              <br/>
-              <button class="btn" id="q1a3" onclick="highStart();highscore();">沒事沒事下次再去吧吧吧</button>
-              <br/>
-              <button class="btn" id="q1a4" onclick="lowStart();lowscore();">來吵架啊啊啊啊啊啊啊啊啊啊啊</button>
+              <button class="btn" id="q1a1" onclick="highStart();highscore();">是</button>
+              <button class="btn" id="q1a2" onclick="lowStart();lowscore();">否</button>
             </div>
           </div>
-          <div class="explain" id="q1e"> 你怎麼可以打架咧？當然要尊重包容友善啊！ <br/>
-            <button class="explainbutton btn" id="q1know" onclick="q2();">我知道了ヽ(✿ﾟ▽ﾟ)ノ</button>
+          <div class="explain" id="q1e"><p>公司報到→討論飛行計畫→起飛前準備→起飛→監視飛行→降落</p>
+            <button class="explainbutton btn" id="q1know" onclick="q2();">我知道了。來，下一題！</button>
           </div>
           
           <!-- 第二題答案與解釋     -->
           
           <div id="q2a" onclick="q2e();">
             <div class="qa_container">
-              <button class="btn" id="q2a1" onclick="highStart();highscore();">以解決勞資爭議為目標</button>
-              <button class="btn" id="q2a2" onclick="lowStart();lowscore();">禁止罷工之勞工與罷工的「必要服務條款」</button>
-            </div>
-            <div class="qa_container">
-              <button class="btn" id="q2a3" onclick="highStart();highscore();">雇主不能因勞工參加罷工而解僱或懲戒勞工</button>
-              <button class="btn" id="q2a4" onclick="lowStart();lowscore();">勞工可以不必組織工會就進行罷工</button>
+              <button class="btn" id="q2a1" onclick="highStart();highscore();">是</button>
+              <button class="btn" id="q2a2" onclick="lowStart();lowscore();">否</button>
             </div>
           </div>
-          <div class="explain" id="q2e"> 雖然台灣無此規定，但有不少國家有相關規定。譬如歐洲就有24個國家這樣規定，例如罷工前2日要預告的有羅馬尼亞、匈牙利為72小時；4日的有希臘；5日的則為法國、克羅埃西亞、馬斯垂克上區域管制中心（MUAC）飛航管制區內者，荷蘭為5至7日前。罷工前7日要預告的最多，有保加利亞、愛爾蘭、拉脫維亞、馬爾他、瑞典、英國；10日的有盧森堡、西班牙、葡萄牙（不得含假日）；義大利規定12日，<br/>
-            <button class="explainbutton btn" id="q2know" onclick="q3();">我知道了ヽ(✿ﾟ▽ﾟ)ノ</button>
+          <div class="explain" id="q2e"> 
+       <p>工會並不是要求放寬酒測值的標準，而是希望多增加驗血的程序以避免酒測結果的誤差。</p><p>其他訴求與最終協商結果如下：</p><br/>
+            <button class="explainbutton btn" id="q2know" onclick="q3();">我知道了。來，下一題！</button>
           </div>
           
           <!-- 第三題答案與解釋     -->
           
           <div id="q3a" onclick="q3e();">
             <div class="qa_container">
-              <button class="btn" id="q3a1" onclick="highStart();highscore();">以解決勞資爭議為目標</button>
-              <button class="btn" id="q3a2" onclick="lowStart();lowscore();">禁止罷工之勞工與罷工的「必要服務條款」</button>
-            </div>
-            <div class="qa_container">
-              <button class="btn" id="q3a3" onclick="highStart();highscore();">雇主不能因勞工參加罷工而解僱或懲戒勞工</button>
-              <button class="btn" id="q3a4" onclick="lowStart();lowscore();">勞工可以不必組織工會就進行罷工</button>
+              <button class="btn" id="q3a1" onclick="highStart();highscore();">是</button>
+              <button class="btn" id="q3a2" onclick="lowStart();lowscore();">否</button>
             </div>
           </div>
-          <div class="explain" id="q3e"> 雖然台灣無此規定，但有不少國家有相關規定。譬如歐洲就有24個國家這樣規定，例如罷工前2日要預告的有羅馬尼亞、匈牙利為72小時；4日的有希臘；5日的則為法國、克羅埃西亞、馬斯垂克上區域管制中心（MUAC）飛航管制區內者，荷蘭為5至7日前。罷工前7日要預告的最多，有保加利亞、愛爾蘭、拉脫維亞、馬爾他、瑞典、英國；10日的有盧森堡、西班牙、葡萄牙（不得含假日）；義大利規定12日，<br/>
-            <button class="explainbutton btn" id="q3know" onclick="q4();">我知道了ヽ(✿ﾟ▽ﾟ)ノ</button>
+          <div class="explain" id="q3e"> <p>《勞資爭議處理法》有明訂定雇主不能因為勞工參加罷工而解僱或懲戒，不過資方也握有反制勞方罷工的手段，稱為「鎖場lockout」，讓未參與罷工者也停工、不給薪資，給罷工者壓力。</p>
+		
+			  <p>台灣法律雖無「鎖場」等字眼，但2019年時長榮航空已針對空服員啟動罷工投票一事，祭出類似鎖場的反制：若罷工導致公司獲利大幅下滑、甚至虧損，參與罷工者將暫停年終獎金與年度調薪，且從罷工首日起3年，暫停員工與眷屬優惠機票直至恢復獲利為止。</p><br/>
+            <button class="explainbutton btn" id="q3know" onclick="q4();">我知道了。來，下一題！</button>
           </div>
           
           <!-- 第四題答案與解釋     -->
           
           <div id="q4a" onclick="q4e();">
             <div class="qa_container">
-              <button class="btn" id="q4a1" onclick="highStart();highscore();">以解決勞資爭議為目標</button>
-              <button class="btn" id="q4a2" onclick="lowStart();lowscore();">禁止罷工之勞工與罷工的「必要服務條款」</button>
-            </div>
-            <div class="qa_container">
-              <button class="btn" id="q4a3" onclick="highStart();highscore();">雇主不能因勞工參加罷工而解僱或懲戒勞工</button>
-              <button class="btn" id="q4a4" onclick="lowStart();lowscore();">勞工可以不必組織工會就進行罷工</button>
+              <button class="btn" id="q4a1" onclick="highStart();highscore();">是</button>
+              <button class="btn" id="q4a2" onclick="lowStart();lowscore();">否</button>
             </div>
           </div>
-          <div class="explain" id="q4e"> 雖然台灣無此規定，但有不少國家有相關規定。譬如歐洲就有24個國家這樣規定，例如罷工前2日要預告的有羅馬尼亞、匈牙利為72小時；4日的有希臘；5日的則為法國、克羅埃西亞、馬斯垂克上區域管制中心（MUAC）飛航管制區內者，荷蘭為5至7日前。罷工前7日要預告的最多，有保加利亞、愛爾蘭、拉脫維亞、馬爾他、瑞典、英國；10日的有盧森堡、西班牙、葡萄牙（不得含假日）；義大利規定12日，<br/>
-            <button class="explainbutton btn" id="q4know" onclick="q5();">我知道了ヽ(✿ﾟ▽ﾟ)ノ</button>
+          <div class="explain" id="q4e"><p>台灣現行法規中無此規定。但有不少國家有相關規定。譬如歐洲就有24個國家這樣規定，例如罷工前2日要預告的有羅馬尼亞、匈牙利為72小時；4日的有希臘；5日的則為法國、克羅埃西亞、馬斯垂克上區域管制中心（MUAC）飛航管制區內者，荷蘭為5至7日前。</p>
+			  
+			  <p>罷工前7日要預告的最多，有保加利亞、愛爾蘭、拉脫維亞、馬爾他、瑞典、英國；10日的有盧森堡、西班牙、葡萄牙（不得含假日）；義大利規定12日，明定14日的則為愛沙尼亞、芬蘭、立陶宛、波蘭； 15日的有比利時及斯洛維尼亞，丹麥則須一個月前預告。</p><br/>
+            <button class="explainbutton btn" id="q4know" onclick="q5();">我知道了。來，下一題！</button>
           </div>
           
           <!-- 第五題答案與解釋     -->
           
           <div id="q5a" onclick="q5e();">
             <div class="qa_container">
-              <button class="btn" id="q5a1" onclick="highStart();highscore();">以解決勞資爭議為目標</button>
-              <button class="btn" id="q5a2" onclick="lowStart();lowscore();">禁止罷工之勞工與罷工的「必要服務條款」</button>
+              <button class="btn" id="q5a1" onclick="highStart();highscore();">是</button>
+              <button class="btn" id="q5a2" onclick="lowStart();lowscore();">否</button>
             </div>
             <div class="qa_container">
               <button class="btn" id="q5a3" onclick="highStart();highscore();">雇主不能因勞工參加罷工而解僱或懲戒勞工</button>
               <button class="btn" id="q5a4" onclick="lowStart();lowscore();">勞工可以不必組織工會就進行罷工</button>
             </div>
           </div>
-          <div class="explain" id="q5e"> 雖然台灣無此規定，但有不少國家有相關規定。譬如歐洲就有24個國家這樣規定，例如罷工前2日要預告的有羅馬尼亞、匈牙利為72小時；4日的有希臘；5日的則為法國、克羅埃西亞、馬斯垂克上區域管制中心（MUAC）飛航管制區內者，荷蘭為5至7日前。罷工前7日要預告的最多，有保加利亞、愛爾蘭、拉脫維亞、馬爾他、瑞典、英國；10日的有盧森堡、西班牙、葡萄牙（不得含假日）；義大利規定12日，<br/>
-            <button class="explainbutton btn" id="q5know" onclick="theend();">我知道了ヽ(✿ﾟ▽ﾟ)ノ</button>
+          <div class="explain" id="q5e"> <br/>
+            <button class="explainbutton btn" id="q5know" onclick="theend();">我知道了。來，下一題！</button>
           </div>
-          <div class="explain" id="end">結果吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉吧拉 <br/>
+          <div class="explain" id="end">結果！ <br/>
             <br/>
-            <button class="explainbutton btn" id="again" onclick="again();">再來一次ヽ(✿ﾟ▽ﾟ)ノ</button>
+            <button class="explainbutton btn" id="again" onclick="again();">再玩一次！</button>
           </div>
         </div>
       </div>
