@@ -5,6 +5,7 @@
 	top:-50px;
 	color: #333;
 	width: 100%;
+	max-width: 1000px;
 	margin: 10px;
 	padding: 0px;
 	overflow-x: hidden;
@@ -15,7 +16,8 @@
 	top: -50px;
 	color: #333;
 	height: 50%;
-	width: 99%;
+	width: 100%;
+	max-width: 700px
 	padding: 0px;
 	overflow-x: hidden;
 }
