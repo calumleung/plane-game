@@ -139,6 +139,7 @@
 	position: relative;
 	background: #ED6A5A;
 	height: 300px;
+	overflow: auto;
 }
 .react p {
 	font-size: 16px;
